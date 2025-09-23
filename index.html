@@ -3,61 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Adelio Frizky - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
 </head>
 <body>
-    <div class="stars"></div>
-    <div class="sidebar">
-        <h1>Adelio Frizky</h1>
-        <p>Student of University Jember</p>
-        <p>Technology Information</p>
+
+    <div class="celestial-container">
+        <div class="stars"></div>
+        <div class="moon" id="moon"></div>
     </div>
-    <div>
-        
-    </div>
-    <div class="content">
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi tenetur architecto maxime, maiores ea, eius vel odit doloribus, a corrupti nihil quis unde ex alias repellendus! Perferendis, vero molestiae.</p>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero recusandae consequuntur, obcaecati veritatis architecto porro asperiores esse eveniet et ab suscipit eos minus accusamus est illum temporibus sed explicabo quas.</p>
-        </section>
-        <section>
-            <h2>Experiences</h2>
-            <section class="container">
-                <div class="dl">
-                    <p>2019 - present</p>
-                </div>
-                <div class="dr">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime excepturi quasi doloremque, totam sapiente, laborum delectus cum eaque corporis distinctio mollitia perferendis hic aliquam nobis repellendus sint minus modi?</p>
-                </div>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h1>Adelio Frizky</h1>
+            <p class="subtitle">Student at University of Jember</p>
+            <p class="department">Technology Information</p>
+            
+            <nav class="nav">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#projects" class="nav-item">Projects</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section id="about" class="section">
+                <p class="intro-text">
+                    Passionate technology student focused on creating innovative digital solutions. 
+                    Currently exploring web development, system design, and emerging technologies 
+                    while pursuing my degree in Information Technology.
+                </p>
             </section>
-            <section class="container">
-                <div class="dl">
-                    <p>2020 - present</p>
-                </div>
-                <div class="dr">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, pariatur quia tempora reprehenderit, necessitatibus in exercitationem similique dolore recusandae aspernatur animi illum vitae saepe, placeat culpa aliquam nostrum. Debitis, quos!</p>
+
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - Present</div>
+                    <div class="timeline-content">
+                        <h3>University of Jember</h3>
+                        <p>Bachelor of Information Technology. Focus on software development, 
+                        database systems, and modern web technologies.</p>
+                    </div>
                 </div>
             </section>
 
-            <section>
-                <h2>Projects</h2>
-                <section class="container">
-                    <div class="dl">
-                        <img class="projects" src="img/Project 1.png">
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer Intern</h3>
+                        <p>Developing responsive web applications using modern frameworks. 
+                        Collaborating with cross-functional teams to deliver scalable solutions.</p>
                     </div>
-                    <div class="dr">
-                        <strong>Sistem Informasi Koperasi</strong>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>Junior Web Developer</h3>
+                        <p>Built and maintained client websites. Implemented responsive designs 
+                        and optimized performance for better user experience.</p>
                     </div>
-                </section>
+                </div>
             </section>
-        </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Sistem Informasi Koperasi</h3>
+                        <p>A comprehensive cooperative information system designed to manage 
+                        member data, transactions, and financial reports.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>E-Learning Platform</h3>
+                        <p>Interactive learning management system with real-time collaboration 
+                        features and progress tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Task Management App</h3>
+                        <p>Productivity application with kanban boards, team collaboration, 
+                        and automated workflow features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
